@@ -1,0 +1,97 @@
+<Title> Аффирматоры </Title>
+<html> 
+ <head> 
+     <!--расположение текста -->
+     <style>
+        .Zentr {
+         position: absolute; /* Абсолютное позиционирование */
+         left: 25%; /* Положение от левого края */
+         top: 10%;
+         /*background: #fc3; /* Цвет фона */
+         /*margin: 7px; /* Отступы вокруг элемента */
+         color: rgb(255, 0, 191);
+         font-size: 200px;
+         
+         
+        } 
+
+        .knopka {
+         position: absolute; /* Абсолютное позиционирование */
+         left: 40%; /* Положение от левого края */
+         /*top: ;
+         /*background: #fc3; /* Цвет фона */
+         /*margin: 7px; /* Отступы вокруг элемента */
+         color: rgb(255, 0, 191);
+         font-size: 50px;
+         
+         
+        }
+
+        
+       </style>
+
+      
+
+             
+
+         <body> 
+               <!--переменные -->
+             
+                 <!--кнопка-->
+                
+             
+             <!--спецтекст -->
+             
+                     
+                      <!--объявление данных -->
+                       <script> 
+                       var $a= Array('молодец','молодчина', 'умница', 'красавчик', 'Красава', 'Ты крутой', 'Ты молодец' , 'Ты сын творца' , 'Я в тебя верю' );
+                       var b=0;
+                        function molodez() { 
+                                                   //if (b==1)  a="молодчина";
+                                  // производим генеарцию
+                                 
+                                 //function getrandomINT () {
+                                 
+                                    
+                                    b=  Math.floor (Math.random() * (7)) ;                    
+                                 
+                                  // закончили производить
+                               
+        
+
+
+
+                          // document.write($a[b] );
+                          // document.write(b);
+                         // if (b==$a.length ) b=0 ;   
+                          document.getElementById("aff").innerHTML = $a[b]; 
+
+                        }   
+                    
+                          
+                       </script>
+                   
+                      
+             
+             
+             
+                   <h1 class="Zentr" id= "aff">
+
+             
+              
+                       молодец  
+                  
+
+                   </h1>          
+             
+            
+            
+         
+                 <button  class="knopka" type="button" onclick="molodez()">            
+                 Аффирмации   
+                  </button> 
+
+         </body>
+   </head>
+</html>
